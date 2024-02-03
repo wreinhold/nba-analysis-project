@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NBA Team Building</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>NBA Team Building Dashboard</h1>
+        <p>Use the interactive charts below to view how teams are being built</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Stat to Examine</h5>
+          <select id="selStat" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="well">
+            <h5>Team to examine</h5>
+            <select id="selTeam" onchange="optionChanged(this.value)"></select>
+        </div>  
+        <div class="well">
+            <h5>View Starters Only?</h5>
+            <select id="selStarters" onchange="optionChanged(this.value)">
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+        </div>  
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="scatter"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="pie"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="./static/analysis.js"></script>
+  <!-- <script src="./static/js/bonus.js"></script> -->
+
+</body>
+
+</html>
