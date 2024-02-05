@@ -58,3 +58,5 @@ How it was made:
     Part of the task for this project was to use a library that we had not learned in class, and after some research, I decided upon using Recharts. Recharts is a library to help build visualizations in JavaScript and is built off of React, another library that is useful in building webpages. In order to initallize the beginning React code, I used Vitejs. This creates the basic framework of a React project.
 
 In order to get the data, I had to import that from the JSONs as well as all of the various dependencies from React, Recharts, and MUI. MUI was used to help build the drop down menus. React was used to get the status of the filters and then Recharts was used to build out the actual graphs.
+
+The main code I worked on can be found in App.jsx that is located in the frontend-code->src folder.
