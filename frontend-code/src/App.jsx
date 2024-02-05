@@ -49,6 +49,7 @@ function App() {
       <h1>NBA Analysis Dashboard</h1>
       <h3>Please use this dashboard to investigate how NBA teams are built</h3>
       <div>
+        {/* Creates a dropdown for statistics */}
         <FormControl variant="filled" sx={{ m: 1, minWidth: 120 }}>
           <InputLabel id="demo-simple-select-filled-label">Statistic</InputLabel>
           <Select
@@ -66,6 +67,7 @@ function App() {
             <MenuItem value="TOV">Turnovers</MenuItem>
           </Select>
         </FormControl>
+        {/* Creates a dropdown for NBA teams */}
         <FormControl variant="filled" sx={{ m: 1, minWidth: 120 }}>
           <InputLabel id="demo-simple-select-filled-label">Team</InputLabel>
           <Select
@@ -106,10 +108,12 @@ function App() {
             <MenuItem value='WAS'>Washington Wizards</MenuItem>
           </Select>
         </FormControl>
+        {/* Button to get the new data */}
         <button onClick={handleFetchData}>Fetch Data</button>
       </div>
       <div>
         <p>Performance vs Salary by Position</p>
+        {/* Creates a bar chart with the relevant data */}
         <ResponsiveContainer width="100%" height={300}>
           <BarChart
             data={data}
@@ -128,6 +132,7 @@ function App() {
       </div>
       <div>
         <p>Performance vs Age by Player</p>
+        {/* Creates a scatter plot */}
         <ResponsiveContainer width="100%" height={300}>
           <ScatterChart
             margin={{
@@ -148,6 +153,7 @@ function App() {
       </div>
       <div>
         <p>Breakdown of Team Performance</p>
+        {/* Creates a Pie Chart */}
         <PieChart width={400} height={400}>
           <Pie
             dataKey={stat}
