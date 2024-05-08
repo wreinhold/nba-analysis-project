@@ -43,7 +43,7 @@ Data Visualization:
     In this section, I will walk through how to use the file and how I created it.
     
 How to use:
-    First, navigate to the nba-analysis-project in terminal. Then type the following commands:
+    First, navigate to the nba-analysis-project and then to frontend-code in terminal. Then type the following commands:
         -> npm install
         -> npm run dev
         -> o
