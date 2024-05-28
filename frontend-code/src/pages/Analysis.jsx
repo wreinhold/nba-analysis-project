@@ -1,8 +1,8 @@
 // Import list
 import { useState } from 'react';
-import './App.css';
-import playerData from './assets/player_info.json';
-import teamData from './assets/team_sums.json';
+import '../App.css';
+import playerData from '../assets/player_info.json';
+import teamData from '../assets/team_sums.json';
 
 import * as React from 'react';
 import InputLabel from '@mui/material/InputLabel';
@@ -175,4 +175,4 @@ function Analysis() {
   );
 }
 
-export default Analysis
+export {Analysis};

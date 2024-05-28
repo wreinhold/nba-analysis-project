@@ -1,9 +1,14 @@
 // Import list
-import { Routes } from './routes';
+import React from 'react';
+import AppRoutes from './routes';
 import './App.css';
 
-export const App = () => {
+const App = () => {
   return (
-    <Routes />
+    <div>
+      <AppRoutes />
+    </div>
   );
-}
+};
+
+export default App;

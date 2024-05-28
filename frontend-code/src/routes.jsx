@@ -1,20 +1,19 @@
-import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import {MLAnalytics} from './pages/MLAnalytics';
-import {Analysis} from './pages/Analysis';
+import React from 'react';
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { MLAnalytics } from './pages/MLAnalytics';
+import { Analysis } from './pages/Analysis';
+import { Home } from './pages/Home.jsx';
 
-export const Routes = () => {
-    return (
-        <Router>
-            <Switch>
-                <Route path='/'>
-                    <Analysis/>
-                </Route>
-            </Switch>
-            <Switch>
-                <Route path='/'>
-                    <MLAnalytics/>
-                </Route>
-            </Switch>
-        </Router>
-    )
-}
+const AppRoutes = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />  {/* Route for the root path */}
+        <Route path="/analysis" element={<Analysis />} />
+        <Route path="/MLAnalytics" element={<MLAnalytics />} />
+      </Routes>
+    </Router>
+  );
+};
+
+export default AppRoutes;
