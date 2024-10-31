@@ -14,7 +14,7 @@ import { PieChart, Pie, ScatterChart, Scatter, Rectangle, BarChart, Bar, XAxis, 
 
 // Setting up Analysis to call in main.jsx
 function Analysis() {
-  
+
   // Creating variables to load in
   const [stat, setStat] = useState('PTS');
   const [team, setTeam] = useState('ATL');
@@ -175,4 +175,4 @@ function Analysis() {
   );
 }
 
-export {Analysis};
+export default Analysis;
